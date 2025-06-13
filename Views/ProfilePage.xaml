@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_15830MAUI.Views.ProfilePage"
+             Title="Profile">
+    <VerticalStackLayout Spacing="25" Padding="30,0" 
+                        VerticalOptions="Center">
+        <Label 
+            Text="Profile"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Frame BorderColor="Gray" Padding="10" Margin="10">
+            <VerticalStackLayout Spacing="10">
+                <Label x:Name="NameLabel" FontSize="18" />
+                <Label x:Name="EmailLabel" FontSize="18" />
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button 
+            x:Name="LogoutButton"
+            Text="Logout"
+            SemanticProperties.Hint="Logout from your account"
+            Clicked="OnLogoutClicked"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage> 
